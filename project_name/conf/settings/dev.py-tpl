@@ -1,0 +1,28 @@
+import os
+
+os.environ.setdefault('DJANGO_SECRET_KEY', '{{ secret_key }}')
+
+from .base import *
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+THIRD_PARTY_APPS += [
+    'django_debug_toolbar',
+]
+
+INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
+
+# Database
+# https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': 'localhost',
+        'PORT': 5432,
+        'NAME': '{{ project_name }}_db',
+        'USER': '{{ project_name }}_user',
+        'PASSWORD': '{{ project_name }}_password'
+    }
+}
