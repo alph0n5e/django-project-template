@@ -26,7 +26,7 @@ For production requirements:
 ## Running
 ### Database
 This project uses PostgreSQL as its database engine.
-For local development, the default configuration is specified in [dev.py#L19]({{ project_name }}/conf/settings/dev.py#L19)
+For local development, the default configuration is specified in [dev.py]({{ project_name }}/conf/settings/dev.py#L5-L9)
 
 Before starting the development server, make sure that:
 - PostgreSQL is running,

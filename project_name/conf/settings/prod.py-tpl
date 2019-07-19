@@ -6,14 +6,3 @@ from .base import *
 ALLOWED_HOSTS += [
     # usually your domain name, or IP address from where the app is served
 ]
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'HOST': get_env_variable('DATABASE_HOST'),
-        'PORT': get_env_variable('DATABASE_PORT'),
-        'NAME': get_env_variable('DATABASE_NAME'),
-        'USER': get_env_variable('DATABASE_USER'),
-        'PASSWORD': get_env_variable('DATABASE_PASSWORD')
-    }
-}
