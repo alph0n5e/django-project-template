@@ -55,6 +55,6 @@ If you are looking for a more comprehensive setup, check out Cookiecutter templa
 To use this template with the `startproject` django admin command:
 ```bash
 django-admin startproject \
-    --template https://github.com/alph0n5e/django-project-template.git \
+    --template https://github.com/alph0n5e/django-project-template/archive/master.zip \
     --extension py,txt,md
 ```
